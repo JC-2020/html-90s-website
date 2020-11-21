@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>90's style websit</title>
+<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<div class="header">
+  <h1>My 90's Website</h1>
+  <p>A website created by JC.</p>
+</div>
+
+<div class="navbar">
+  <a href="http://www.herbritts.com">Herb Ritts Photography</a>
+  <a href="http://www.helmut-newton-foundation.org/en/helmut-newton/">Helmut Newton Photography</a>
+  <a href="http://www.anseladams.com">Ansel Adams Photography</a>
+  <a href="http://www.irvingpenn.org" class="right">My favorite Photo</a>
+</div>
+
+<!-- Slide Show -->
+<section>
+    <img class="mySlides" src="K-51-02.jpg"
+    style="width:100%">
+    <img class="mySlides" src="P-80-01.jpg"
+    style="width:100%">
+    <img class="mySlides" src="The-Kiss.png"
+    style="width:100%">
+  </section>
+
+<div class="row">
+  <div class="side">
+    <h2>About Herb Ritts</h2>
+    <h5>Photo of me:</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Herb Ritts was drawn to clean lines and strong froms. This graphic simplicity allowed his images to be read and felt instantaneously.</p>
+    <h3>90's Photos</h3>
+    <p>Fashion</p>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div>
+  </div>
+  <div class="main">
+    <h2>Black & White Photography Arts</h2>
+    <h5>Photographer, Sep 7, 2020</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p></p>
+    <p>B&W Visualization ARTS</p>
+    <br>
+    <h2>VOGUE</h2>
+    <h5>Karl Lagerfeld, Sep 7, 2020</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p></p>
+    <p>Creation is the birth of something, and something cannot come from nothing. When someone creares something: a painting, a poem, a photograph, the creativity comes from an idea, from a feeling,from emotion, or fromo a combination of ideas, feelings and emotions that are somehow 'reborn' from all our experiences and perspectives.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Powered by JC Inc</h2>
+</div>
+
+<script>
+    // Automatic Slideshow - change image every 3 seconds
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 3000);
+    }
+</script>
+
+</body>
+</html>
